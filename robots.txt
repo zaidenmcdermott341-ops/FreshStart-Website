@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zaidenmcdermott341-ops.github.io/FreshStart-Website/sitemap.xml
