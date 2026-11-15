@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" role="img" aria-labelledby="title desc">
+<title id="title">FreshStart Home and Garden Services</title>
+<desc id="desc">A green house and leaf emblem beside the FreshStart wordmark and slogan.</desc>
+<defs>
+ <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#78bd55"/><stop offset="1" stop-color="#26764b"/></linearGradient>
+</defs>
+<g transform="translate(8 10)">
+ <path d="M12 62 66 18l54 44v61H82V87H51v36H12Z" fill="#123b2a"/>
+ <path d="m2 65 64-53 64 53" fill="none" stroke="#26764b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M68 49c-2-22 13-39 39-42-1 25-14 41-39 42Z" fill="url(#leaf)"/>
+ <path d="M67 51c-1-17-11-28-29-32 0 20 10 31 29 32Z" fill="#8fbd8f"/>
+ <path d="M67 53 97 18M66 53 43 24" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+ <path d="M139 72h14" stroke="#8fbd8f" stroke-width="5" stroke-linecap="round"/>
+</g>
+<text x="170" y="72" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800" letter-spacing="-2"><tspan fill="#123b2a">Fresh</tspan><tspan fill="#26764b">Start</tspan></text>
+<text x="174" y="101" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#405449">HOME &amp; GARDEN SERVICES</text>
+<path d="M174 113h415" stroke="#dce7dd" stroke-width="2"/>
+<text x="174" y="137" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" font-style="italic" fill="#26764b">We Clean, We Care, We Deliver.</text>
+</svg>
