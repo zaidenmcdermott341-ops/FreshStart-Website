@@ -3,39 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="FreshStart Home & Garden Services — friendly, reliable local cleaning, garden tidying, car washing and pet care in Pontardawe.">
+<meta name="theme-color" content="#123b2a">
+<meta name="description" content="FreshStart Home & Garden Services offers friendly local house cleaning, garden tidying, car washing and pet care in Pontardawe.">
 <title>FreshStart Home &amp; Garden Services | Pontardawe</title>
 <style>
-:root{--green:#237343;--dark:#174d2d;--mint:#eaf5ed;--cream:#fbfdf9;--ink:#203128;--muted:#617267;--line:#dce8df}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font:16px/1.65 Arial,Helvetica,sans-serif}a{color:inherit}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.4rem;font-weight:800;color:var(--dark);text-decoration:none}.brand span{color:#83b393}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{text-decoration:none;font-size:.92rem;font-weight:700;color:#42564a}nav a:hover{color:var(--green)}
-.hero{background:linear-gradient(115deg,rgba(19,65,38,.96),rgba(35,115,67,.86));color:#fff;padding:88px 0 82px}.hero-inner{max-width:760px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;color:#cde8d4}h1{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.04;letter-spacing:-2px;margin:14px 0 18px}.slogan{font-size:clamp(1.1rem,3vw,1.45rem);font-weight:800;margin:0 0 12px}.hero p{max-width:620px;color:#e6f3e9;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 20px;border-radius:9px;font-weight:800;text-decoration:none}.btn-light{background:#fff;color:var(--dark)}.btn-outline{border:1px solid #ffffffb3;color:#fff}
-section{padding:68px 0}.section-head{max-width:650px;margin-bottom:30px}.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:0 0 10px;letter-spacing:-1px}.section-head p{color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:0 7px 22px #1c432a0b}.symbol{width:43px;height:43px;display:grid;place-items:center;background:var(--mint);border-radius:12px;font-size:1.35rem}.card h3{margin:14px 0 7px;font-size:1.15rem}.card p{color:var(--muted);font-size:.94rem;margin:0}
-.prices{background:var(--mint)}.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.price-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.price-card h3{margin:0 0 12px;color:var(--dark)}.price-row{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid #edf2ee}.price-row:last-child{border:0}.price{font-weight:800;white-space:nowrap;color:var(--green)}.note{color:var(--muted);font-size:.88rem;margin-top:18px}
-.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.promise{background:var(--dark);color:#fff;border-radius:18px;padding:28px}.promise h3{margin-top:0;font-size:1.4rem}.promise p{color:#e0eee4;margin-bottom:0}
-.contact{background:#173f29;color:#fff}.contact .section-head p{color:#d1e2d6}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;background:#ffffff14;border:1px solid #ffffff33;border-radius:16px;padding:24px}.contact-box p{margin:4px 0 0;color:#d1e2d6}footer{padding:22px 0;background:#12331f;color:#d1e2d6;font-size:.85rem}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:800px){.services{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}}@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column;padding:14px 0;gap:8px}nav{gap:14px}.hero{padding:65px 0}.services,.price-grid{grid-template-columns:1fr}section{padding:52px 0}}
+:root{--forest:#123b2a;--green:#26764b;--leaf:#8fbd8f;--mint:#edf6ee;--paper:#fbfcf8;--ink:#1e3026;--muted:#647369;--line:#dce7dd;--white:#fff;--gold:#f2d58b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;font-size:1.35rem;letter-spacing:-.7px;color:var(--forest)}
+.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:var(--forest);color:white;font-size:1.2rem}
+.brand span:last-child{color:var(--green)}
+nav{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:.92rem;font-weight:700;color:#405449}
+nav a:hover{color:var(--green)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:999px;background:var(--green);color:white;text-decoration:none;font-weight:800;border:1px solid var(--green);transition:transform .18s,background .18s}
+.nav-cta:hover,.btn:hover{background:var(--forest);transform:translateY(-2px)}
+.hero{position:relative;overflow:hidden;padding:94px 0 86px;background:radial-gradient(ellipse at 85% 20%,#397c53 0,transparent 37%),linear-gradient(120deg,#102f22,#1d5938 68%,#26764b);color:white}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff20;border-radius:50%;right:-120px;bottom:-270px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff06}
+.hero-inner{position:relative;z-index:1;max-width:760px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid #ffffff42;border-radius:999px;color:#e1f1e3;font-size:.78rem;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+h1{font-size:clamp(2.8rem,7vw,5.25rem);line-height:1.01;letter-spacing:-3px;margin:22px 0 16px}
+.slogan{font-size:clamp(1.1rem,2.6vw,1.45rem);font-weight:850;margin:0 0 10px;color:#e8f5e8}
+.hero-copy{max-width:620px;color:#dcebe0;font-size:1.08rem;margin:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn-light{background:white;color:var(--forest);border-color:white}
+.btn-light:hover{background:#eaf4eb;color:var(--forest)}
+.btn-ghost{background:transparent;border-color:#ffffff80;color:white}
+.btn-ghost:hover{background:#ffffff15}
+.hero-note{margin-top:27px;color:#d2e4d5;font-size:.9rem}
+.trust-strip{background:white;border-bottom:1px solid var(--line)}
+.trust-items{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:19px 0}
+.trust-item{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;font-size:.91rem;font-weight:750;color:#3d5547}
+.trust-item b{font-size:1.2rem}
+section{padding:76px 0}
+.section-head{max-width:680px;margin-bottom:32px}
+.kicker{color:var(--green);font-size:.78rem;font-weight:850;letter-spacing:1.6px;text-transform:uppercase}
+.section-head h2{font-size:clamp(2rem,4vw,2.8rem);line-height:1.12;letter-spacing:-1.5px;margin:8px 0 12px;color:var(--forest)}
+.section-head p{color:var(--muted);margin:0;font-size:1.02rem}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px 21px;box-shadow:0 12px 34px #163e2609;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 38px #163e2615}
+.symbol{width:49px;height:49px;display:grid;place-items:center;background:var(--mint);border-radius:15px;font-size:1.5rem}
+.card h3{margin:17px 0 7px;font-size:1.14rem;color:var(--forest)}
+.card p{color:var(--muted);font-size:.94rem;margin:0}
+.prices{background:var(--mint)}
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.price-card{background:white;border:1px solid #dce9de;border-radius:17px;padding:24px}
+.price-card h3{margin:0 0 12px;color:var(--forest);font-size:1.17rem}
+.price-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:10px 0;border-bottom:1px solid #edf2ed}
+.price-row:last-child{border:0}
+.price{font-weight:850;white-space:nowrap;color:var(--green)}
+.price-note{margin:22px 0 0;color:var(--muted);font-size:.9rem}
+.offer{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;background:linear-gradient(115deg,#123b2a,#26764b);color:white;border-radius:22px;padding:32px}
+.offer-tag{display:inline-block;background:#ffffff1c;border:1px solid #ffffff42;padding:6px 11px;border-radius:999px;font-size:.76rem;font-weight:850;letter-spacing:1px;text-transform:uppercase}
+.offer h3{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.15;margin:13px 0 9px;letter-spacing:-.7px}
+.offer p{margin:0;color:#e0eee3;max-width:650px}
+.offer-amount{font-size:clamp(2.5rem,6vw,4rem);font-weight:900;letter-spacing:-2px;color:#f5dfa3;white-space:nowrap}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
+.promise{background:white;border:1px solid var(--line);border-radius:19px;padding:28px;box-shadow:0 12px 34px #163e2609}
+.promise h3{color:var(--forest);font-size:1.3rem;margin:0 0 12px}
+.promise p{margin:0;color:var(--muted)}
+.promise-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.promise-list li{display:flex;gap:10px;align-items:flex-start;color:#405449}
+.promise-list b{color:var(--green)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.step{border-top:3px solid var(--leaf);padding:17px 4px 0}
+.step-number{font-size:.78rem;font-weight:900;color:var(--green);letter-spacing:1px}
+.step h3{margin:6px 0;color:var(--forest);font-size:1.05rem}
+.step p{margin:0;color:var(--muted);font-size:.92rem}
+.contact{background:var(--forest);color:white}
+.contact .section-head h2{color:white}
+.contact .section-head p{color:#d1e2d6}
+.contact-box{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:#ffffff12;border:1px solid #ffffff35;border-radius:19px;padding:27px}
+.contact-box strong{font-size:1.08rem}
+.contact-box p{margin:5px 0 0;color:#d5e5d9}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.contact-links a{color:white;text-decoration:none;border-bottom:1px solid #ffffff70}
+.contact-links a:hover{color:#cde8d4}
+.safety-note{margin:18px 0 0;color:#c5d9ca;font-size:.86rem}
+footer{padding:23px 0;background:#0c2a1d;color:#d1e2d6;font-size:.86rem}
+footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:850px){.services{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.nav{gap:14px}nav{gap:15px}}
+@media(max-width:600px){.wrap{width:min(100% - 30px,1120px)}.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.nav-cta{display:none}nav{gap:13px}nav a{font-size:.85rem}.hero{padding:68px 0 62px}h1{letter-spacing:-2px}.trust-items{grid-template-columns:1fr;gap:10px}.trust-item{justify-content:flex-start;text-align:left}section{padding:57px 0}.services,.price-grid,.steps{grid-template-columns:1fr}.offer{grid-template-columns:1fr;padding:25px}.offer-amount{font-size:2.7rem}.contact-box{padding:22px}.actions .btn{width:100%}footer .wrap{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#home">Fresh<span>Start</span></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="FreshStart home"><span class="brand-mark">✦</span>Fresh<span>Start</span></a>
+  <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#offers">Offer</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="#contact">Get a quote ↗</a>
+ </div>
+</header>
 <main>
-<section class="hero" id="home"><div class="wrap hero-inner"><div class="eyebrow">Home • Garden • Cars • Pets</div><h1>A fresh start<br>starts here.</h1><p class="slogan">We Clean, We Care, We Deliver.</p><p>Friendly local help in Pontardawe to keep your home, garden and car looking their best, with thoughtful care for your pets too.</p><div class="actions"><a class="btn btn-light" href="#contact">Ask for a quote</a><a class="btn btn-outline" href="#services">Explore our services</a></div></div></section>
-<section id="services"><div class="wrap"><div class="section-head"><h2>How we can help</h2><p>Practical help for everyday jobs, delivered with care and attention.</p></div><div class="services">
-<article class="card"><div class="symbol">🏡</div><h3>House cleaning</h3><p>General cleaning, dusting, vacuuming, mopping and kitchen or bathroom surface cleaning.</p></article>
-<article class="card"><div class="symbol">🌿</div><h3>Garden tidying</h3><p>Weeding, sweeping patios and paths, leaf clearing and general garden tidying.</p></article>
-<article class="card"><div class="symbol">🚗</div><h3>Car washing</h3><p>Exterior washes, wheel cleaning and simple interior vacuum options.</p></article>
-<article class="card"><div class="symbol">🐾</div><h3>Pet care</h3><p>Dog walking, feeding visits and friendly pet check-ins arranged with owners.</p></article>
-</div></div></section>
-<section class="prices" id="prices"><div class="wrap"><div class="section-head"><h2>Simple, clear prices</h2><p>Starting prices are shown below. The final price can be confirmed before any work is agreed.</p></div><div class="price-grid">
-<div class="price-card"><h3>🚗 Car washing</h3><div class="price-row"><span>Basic exterior wash</span><span class="price">£8</span></div><div class="price-row"><span>Exterior + wheel clean</span><span class="price">£10</span></div><div class="price-row"><span>Exterior + interior vacuum</span><span class="price">£15</span></div><div class="price-row"><span>Full inside and out</span><span class="price">£20</span></div></div>
-<div class="price-card"><h3>🌿 Garden work</h3><div class="price-row"><span>General garden tidying</span><span class="price">£12/hour</span></div><p class="note">Suggested minimum booking: one hour. Larger jobs can be quoted in advance.</p></div>
-<div class="price-card"><h3>🏡 House cleaning</h3><div class="price-row"><span>General cleaning</span><span class="price">£10/hour</span></div><p class="note">The tasks and time needed will be agreed before the visit.</p></div>
-<div class="price-card"><h3>🐾 Pet care</h3><div class="price-row"><span>Dog walk — 30 minutes</span><span class="price">£7</span></div><div class="price-row"><span>Dog walk — 60 minutes</span><span class="price">£12</span></div><div class="price-row"><span>Pet feeding visit</span><span class="price">£5</span></div><div class="price-row"><span>Pet check-in</span><span class="price">£5</span></div></div>
-</div><p class="note">Prices are draft starting prices and should be checked against your costs and arrangements before publishing.</p></div></section>
-<section id="offers"><div class="wrap"><div class="section-head"><h2>First-time customer offer</h2><p>Try FreshStart and enjoy a little saving on your first booking.</p></div><div class="promise"><h3>Welcome to FreshStart — get 10% off your first booking!</h3><p>Available to new customers in Pontardawe. One introductory discount per household. Maximum saving £5. Cannot be combined with other offers. Your work and final price will be agreed before booking.</p></div></div></section>
-<section id="about"><div class="wrap about-grid"><div><div class="section-head"><h2>A local service with care at its heart</h2><p>FreshStart is here to make everyday jobs a little easier. From a tidy garden to a freshly washed car, we aim to provide friendly service and clear communication from the first enquiry.</p></div></div><aside class="promise"><h3>Our promise</h3><p>We listen to what you need, agree the work and price beforehand, and treat your home, belongings and pets with respect.</p></aside></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="section-head"><h2>Get in touch</h2><p>Interested in a service or want to ask for a quote? Contact us using the details below.</p></div><div class="contact-box"><div><strong>FreshStart Home &amp; Garden Services</strong><p>Proudly serving Pontardawe only.</p><p><strong>Phone:</strong> 07502 272854</p><p><strong>Email:</strong> ZaidenMcDermott341@gmail.com</p><p><strong>Payment:</strong> Cash only</p></div><a class="btn btn-light" href="mailto:ZaidenMcDermott341@gmail.com?subject=FreshStart%20quote%20request">Email for a quote</a></div><p class="note" style="color:#d1e2d6">A parent or guardian should help manage customer enquiries, visits, payments and safety arrangements.</p></div></section>
+<section class="hero" id="home">
+ <div class="wrap hero-inner">
+  <div class="eyebrow">Local help in Pontardawe</div>
+  <h1>A fresh start<br>starts here.</h1>
+  <p class="slogan">We Clean, We Care, We Deliver.</p>
+  <p class="hero-copy">A helping hand with the everyday jobs — from freshening up your home and garden to washing your car and caring for your pets.</p>
+  <div class="actions"><a class="btn btn-light" href="#contact">Ask for a quote <span>→</span></a><a class="btn btn-ghost" href="#services">Explore our services</a></div>
+  <p class="hero-note">Friendly local services · Clear prices · Pontardawe only</p>
+ </div>
+</section>
+<div class="trust-strip"><div class="wrap trust-items">
+ <div class="trust-item"><b>✓</b> Agree the work before we start</div>
+ <div class="trust-item"><b>♡</b> Care and respect in every job</div>
+ <div class="trust-item"><b>⌂</b> Serving Pontardawe locally</div>
+</div></div>
+<section id="services"><div class="wrap">
+ <div class="section-head"><span class="kicker">What we do</span><h2>A little help goes a long way.</h2><p>Practical help for everyday jobs, with the work and price agreed with you beforehand.</p></div>
+ <div class="services">
+  <article class="card"><div class="symbol" aria-hidden="true">🏡</div><h3>House cleaning</h3><p>General cleaning, dusting, vacuuming, mopping and kitchen or bathroom surface cleaning.</p></article>
+  <article class="card"><div class="symbol" aria-hidden="true">🌿</div><h3>Garden tidying</h3><p>Weeding, sweeping patios and paths, leaf clearing and general garden tidying.</p></article>
+  <article class="card"><div class="symbol" aria-hidden="true">🚗</div><h3>Car washing</h3><p>Exterior washes, wheel cleaning and simple interior vacuum options.</p></article>
+  <article class="card"><div class="symbol" aria-hidden="true">🐾</div><h3>Pet care</h3><p>Dog walking, feeding visits and friendly pet check-ins arranged with owners.</p></article>
+ </div>
+</div></section>
+<section class="prices" id="prices"><div class="wrap">
+ <div class="section-head"><span class="kicker">Straightforward pricing</span><h2>Simple prices. No surprises.</h2><p>Choose the help you need. We'll confirm the tasks, availability and total price with you before booking.</p></div>
+ <div class="price-grid">
+  <div class="price-card"><h3>🚗 Car washing</h3><div class="price-row"><span>Basic exterior wash</span><span class="price">£8</span></div><div class="price-row"><span>Exterior + wheel clean</span><span class="price">£10</span></div><div class="price-row"><span>Exterior + interior vacuum</span><span class="price">£15</span></div><div class="price-row"><span>Full inside and out</span><span class="price">£20</span></div></div>
+  <div class="price-card"><h3>🌿 Garden work</h3><div class="price-row"><span>General garden tidying</span><span class="price">£12/hour</span></div><p class="price-note">Larger jobs can be quoted in advance.</p></div>
+  <div class="price-card"><h3>🏡 House cleaning</h3><div class="price-row"><span>General cleaning</span><span class="price">£10/hour</span></div><p class="price-note">The tasks and time needed will be agreed before the visit.</p></div>
+  <div class="price-card"><h3>🐾 Pet care</h3><div class="price-row"><span>Dog walk — 30 minutes</span><span class="price">£7</span></div><div class="price-row"><span>Dog walk — 60 minutes</span><span class="price">£12</span></div><div class="price-row"><span>Pet feeding visit</span><span class="price">£5</span></div><div class="price-row"><span>Pet check-in</span><span class="price">£5</span></div></div>
+ </div>
+</div></section>
+<section id="offers"><div class="wrap">
+ <div class="section-head"><span class="kicker">A warm welcome</span><h2>New to FreshStart?</h2><p>We'd love to help with your first job.</p></div>
+ <div class="offer"><div><span class="offer-tag">First-time customer offer</span><h3>Enjoy 10% off your first booking.</h3><p>For new customers in Pontardawe. One introductory discount per household. Maximum saving £5. Cannot be combined with other offers.</p></div><div class="offer-amount">10% off</div></div>
+</div></section>
+<section id="about"><div class="wrap">
+ <div class="about-grid">
+  <div><div class="section-head"><span class="kicker">The FreshStart way</span><h2>Local service, thoughtful care.</h2><p>FreshStart is here to make everyday jobs a little easier. From a tidy garden to a freshly washed car, we aim to provide friendly service and clear communication from the first enquiry.</p></div></div>
+  <aside class="promise"><h3>Our promise to you</h3><p>We listen to what you need, agree the work and price beforehand, and treat your home, belongings and pets with respect.</p><ul class="promise-list"><li><b>✓</b><span>Clear communication from the start</span></li><li><b>✓</b><span>Agreed tasks and prices before work begins</span></li><li><b>✓</b><span>Careful, respectful approach</span></li></ul></aside>
+ </div>
+ <div class="steps"><div class="step"><span class="step-number">01 / GET IN TOUCH</span><h3>Tell us what you need</h3><p>Send an enquiry and let us know which service you're interested in.</p></div><div class="step"><span class="step-number">02 / AGREE THE DETAILS</span><h3>Get a clear quote</h3><p>We'll discuss the job, timing and price before anything is booked.</p></div><div class="step"><span class="step-number">03 / FRESHSTART</span><h3>Enjoy the difference</h3><p>We'll carry out the agreed work with care and attention.</p></div></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap">
+ <div class="section-head"><span class="kicker" style="color:#b9dfc1">Let's talk</span><h2>Ready for a FreshStart?</h2><p>Have a question or want to ask for a quote? Get in touch and tell us how we can help.</p></div>
+ <div class="contact-box"><div><strong>FreshStart Home &amp; Garden Services</strong><p>Proudly serving Pontardawe only.</p><p><strong>Payment:</strong> Cash only at the moment.</p><div class="contact-links"><a href="tel:07502272854">Call 07502 272854</a><span aria-hidden="true">·</span><a href="mailto:ZaidenMcDermott341@gmail.com?subject=FreshStart%20quote%20request">Email FreshStart</a></div></div><a class="btn btn-light" href="mailto:ZaidenMcDermott341@gmail.com?subject=FreshStart%20quote%20request">Ask for a quote ↗</a></div>
+ <p class="safety-note">A parent or guardian helps manage customer enquiries, visits, payments and safety arrangements.</p>
+</div></section>
 </main>
-<footer><div class="wrap"><span>© FreshStart Home &amp; Garden Services</span><span>We Clean, We Care, We Deliver.</span></div></footer>
-</body></html>
+<footer><div class="wrap"><span>© 2026 FreshStart Home &amp; Garden Services</span><span>We Clean, We Care, We Deliver.</span></div></footer>
+</body>
+</html>
